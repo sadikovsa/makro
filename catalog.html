@@ -173,110 +173,232 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="main-slider-section">
+		<section class="catalog">
 			<div class="container">
-				<h1 class="sr-only">Слайдер</h1>
-				<div class="owl-carousel main-slider">
-					<a href="#" class="main-slider-item">
-						<img src="img/slider/main-slider-1.jpg" alt="slider">
-					</a>
-					<a href="#" class="main-slider-item">
-						<img src="img/slider/main-slider-1.jpg" alt="slider">
-					</a>
-					<a href="#" class="main-slider-item">
-						<img src="img/slider/main-slider-1.jpg" alt="slider">
-					</a>
+				<h2 class="sr-only">Каталог</h2>
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg-3">
+						<form action="#" class="catalog-filters">
+						<p class="catalog-title">Категории товаров</p>
+							<div class="catalog-filters-block">
+								<p class="catalog-filters-field-wrapper">
+									<label for="catalog-filter-1" class="catalog-filters-checkbox-wrapper">
+										<input type="checkbox" id="catalog-filter-1">
+										<span class="icon-check"></span>
+									</label>
+									<label for="catalog-filter-1" class="catalog-filters-checkbox-label">Хлебобулочные изделия <span>(20)</span></label>
+								</p>
+								<p class="catalog-filters-field-wrapper">
+									<label for="catalog-filter-2" class="catalog-filters-checkbox-wrapper">
+										<input type="checkbox" id="catalog-filter-2">
+										<span class="icon-check"></span>
+									</label>
+									<label for="catalog-filter-2" class="catalog-filters-checkbox-label">Мясо <span>(4)</span></label>
+								</p>
+								<p class="catalog-filters-field-wrapper">
+									<label for="catalog-filter-3" class="catalog-filters-checkbox-wrapper">
+										<input type="checkbox" id="catalog-filter-3">
+										<span class="icon-check"></span>
+									</label>
+									<label for="catalog-filter-3" class="catalog-filters-checkbox-label">Бакалея <span>(3)</span></label>
+								</p>
+								<p class="catalog-filters-field-wrapper">
+									<label for="catalog-filter-4" class="catalog-filters-checkbox-wrapper">
+										<input type="checkbox" id="catalog-filter-4">
+										<span class="icon-check"></span>
+									</label>
+									<label for="catalog-filter-4" class="catalog-filters-checkbox-label">Напитки <span>(13)</span></label>
+								</p>
+								<p class="catalog-filters-field-wrapper">
+									<label for="catalog-filter-5" class="catalog-filters-checkbox-wrapper">
+										<input type="checkbox" id="catalog-filter-5">
+										<span class="icon-check"></span>
+									</label>
+									<label for="catalog-filter-5" class="catalog-filters-checkbox-label">Молочная продукция <span>(15)</span></label>
+								</p>
+							</div>
+							<p class="catalog-title">Цена, сум</p>
+							<p class="catalog-filters-slider-wrapper">
+								<input type="text" class="js-range-slider" name="price_range" min="0" max="1000000" value="30" />
+							</p>
+							<p class="catalog-filters-slider-result">
+								<input type="number" class="site-field" name="price_min" min="0" max="1000000" size="8" step="5000"> - 
+								<input type="number" class="site-field" name="price_max" min="0" max="1000000" size="8" step="5000">
+							</p>
+						</form>
+					</div>
+					<div class="col-12 col-md-8 col-lg-9">
+						<div class="goods-items-top">
+							<p class="goods-items-count">Найдено <span>111</span> товаров</p>
+							<div class="goods-items-sorting">
+								<a href="#" class="goods-items-sorting-active"><span class="icon-arrow_up"></span>По популярности</a>
+								<ul class="goods-items-sorting-list">
+									<li><a href="#"><span class="icon-arrow_up"></span>По популярности</a></li>
+									<li><a href="#"><span class="icon-arrow_down"></span>По популярности</a></li>
+									<li><a href="#"><span class="icon-arrow_up"></span>По цене</a></li>
+									<li><a href="#"><span class="icon-arrow_down"></span>По цене</a></li>
+								</ul>
+								<span class="icon-caret-down"></span>
+							</div>
+						</div>
+						<div class="goods-items-wrapper">
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-1.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-2.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-3.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-1.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-2.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-3.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-1.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-2.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="goods-item">
+								<a href="#" class="goods-item-img-wrapper">
+									<img src="img/catalog/catalog-3.png" alt="goods">
+								</a>
+								<p class="goods-item-name">Ежевика 125г упаковка</p>
+								<div class="goods-item-prices">
+									<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+									<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+									<div class="goods-item-btns">
+										<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="pagination">
+							<li class="pagination-item"><a href="#" class="pagination-link"><span class="icon-caret-left"></span></a></li>
+							<li class="pagination-item"><a href="#" class="pagination-link active">1</a></li>
+							<li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+							<li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+							<li class="pagination-item"><a href="#" class="pagination-link"><span class="icon-caret-right"></span></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="special">
-			<div class="container">
-				<a href="#" class="title link">Товары по акции</a>
-				<div class="owl-carousel special-slider goods-wrapper">
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-1.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-2.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-3.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-1.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-2.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="special">
+		<section class="catalog-special">
 			<div class="container">
 				<a href="#" class="title">Товары для мам и детей</a>
 				<div class="owl-carousel special-slider goods-wrapper">
@@ -359,41 +481,6 @@
 								</button>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="news">
-			<div class="container">
-				<h2 class="title">Новости</h2>
-				<div class="news-wrapper">
-					<div class="news-item">
-						<p class="news-img-wrapper">
-							<img src="img/news/news-1.jpg" alt="news">
-						</p>
-						<span class="news-date">03.07.2018</span>
-						<p class="news-text">Итоги первой недели акции - Готовь, Выигрывай, Отдыхай!</p>
-					</div>
-					<div class="news-item">
-						<p class="news-img-wrapper">
-							<img src="img/news/news-2.jpg" alt="news">
-						</p>
-						<span class="news-date">03.07.2018</span>
-						<p class="news-text">Угадайте финалистов и выиграйте сертификаты на 300.000, 200.000, 100.000 сумов.</p>
-					</div>
-					<div class="news-item">
-						<p class="news-img-wrapper">
-							<img src="img/news/news-1.jpg" alt="news">
-						</p>
-						<span class="news-date">03.07.2018</span>
-						<p class="news-text">Итоги первой недели акции - Готовь, Выигрывай, Отдыхай!</p>
-					</div>
-					<div class="news-item">
-						<p class="news-img-wrapper">
-							<img src="img/news/news-2.jpg" alt="news">
-						</p>
-						<span class="news-date">03.07.2018</span>
-						<p class="news-text">Угадайте финалистов и выиграйте сертификаты на 300.000, 200.000, 100.000 сумов.</p>
 					</div>
 				</div>
 			</div>
@@ -483,13 +570,13 @@
 				</div>
 			</div>
 			<div class="footer-bottom">
-					<ul class="footer-social">
-						<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-facebook"></span></a></li>
-						<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-telegram"></span></a></li>
-						<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-vk"></span></a></li>
-						<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-ok"></span></a></li>
-					</ul>
-					<p class="footer-copy">«Makro» 2019 &copy; Все права защищены</p>
+				<ul class="footer-social">
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-facebook"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-telegram"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-vk"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-ok"></span></a></li>
+				</ul>
+				<p class="footer-copy">«Makro» 2019 &copy; Все права защищены</p>
 				<button type="button" class="back-to-top"><span class="icon-caret-up"></span></button>
 			</div>
 		</div>

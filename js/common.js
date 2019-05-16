@@ -1,5 +1,5 @@
 $(function () {
-	
+
 	$('.owl-carousel.special-slider').owlCarousel({
 		items: 4,
 		loop: true,
@@ -10,7 +10,7 @@ $(function () {
 		smartSpeed: 1000,
 		autoplaySpeed: 1000,
 		navText: ['<span class="icon-caret-left"></span>', '<span class="icon-caret-right"></span>'],
-		
+
 	});
 	$('.owl-carousel.main-slider').owlCarousel({
 		items: 1,
@@ -26,7 +26,7 @@ $(function () {
 
 	// phone mask
 	$(".phone").mask("+9(999) 999-99-99");
-	
+
 	// Main Menu
 	function mainMenu() {
 		$('#header-catalog-checkbox').change(function () {
@@ -50,9 +50,9 @@ $(function () {
 			function () {
 				var mainMenuHeight = $('.header-catalog-menu-block').height();
 				var subMenuHeight = $(this).find('.header-catalog-submenu').height();
-				if(mainMenuHeight > subMenuHeight) {
+				if (mainMenuHeight > subMenuHeight) {
 					subMenu.css('height', mainMenuHeight);
-				}else {
+				} else {
 					mainMenu.css('height', subMenuHeight);
 				}
 			},
@@ -64,7 +64,7 @@ $(function () {
 
 	$(window).on('load', mainMenu);
 	$(document).ready(mainMenu);
-	
+
 	var burger = $('#header-catalog-checkbox');
 	var mobileContent = $('.header-catalog-menu-block');
 
@@ -79,8 +79,8 @@ $(function () {
 			mobileContent.removeClass('show');
 		}
 	});
-	
-	
+
+
 	// Sticky Header
 	window.onscroll = function () {
 		showBtn()
@@ -88,6 +88,7 @@ $(function () {
 	var header = document.querySelector(".header");
 	var offesetTop = header.offsetTop;
 	var btn = $('.back-to-top');
+
 	function showBtn() {
 		if (window.pageYOffset > offesetTop) {
 			btn.css('display', 'flex');
@@ -95,8 +96,8 @@ $(function () {
 			btn.css('display', 'none');
 		}
 	}
-	
-	
+
+
 	function backToTop() {
 		var header = document.querySelector(".header");
 		var offesetTop = header.offsetTop;
@@ -120,7 +121,7 @@ $(function () {
 	}
 	$(window).on('resize', backToTop);
 	$(document).ready(backToTop);
-	
+
 	$('.counter-input').on('input change paste', function () {
 		$(this).val(this.value.replace(/[^0-9\-]/, '')); // запрещаем ввод любых символов, кроме цифр и знака минуса
 	});
@@ -142,5 +143,63 @@ $(function () {
 		input.attr('data-val', value).change();
 		input.val(total).change(); // выводим полученное value в инпут; триггер .change() - на случай, если на изменение этого инпута у вас уже объявлен еще какой-то обработчик
 	});
+
+	$('.goods-items-sorting').on('click', function (e) {
+		var target = e.target;
+		if (target.tagName === "A") {
+			var targetContent = target.innerHTML;
+			$(this).find('.goods-items-sorting-active').html(targetContent);
+		}
+	});
+
+	function rangeSlider() {
+		var minAver = $("input[name='price_range']").attr("min");
+		var maxAver = $("input[name='price_range']").attr("max");
+		var valAver = $("input[name='price_range']").val();
+		var step = 2;
+		$(".js-range-slider").ionRangeSlider({
+			type: "double",
+			skin: "big",
+			hide_min_max: true,
+			hide_from_to: true,
+			force_edges: true, // force UI in the box
+			hide_min_max: true, // show/hide MIN and MAX labels
+			hide_from_to: true, // show/hide FROM and TO labels
+			block: false,
+			min: minAver,
+			step: step,
+			max: maxAver,
+			from: valAver,
+			to: maxAver,
+			grid: false,
+			onStart: function (data) {
+				// Called every time handle position is changed
+				$("input[name='price_min']").val(data.from);
+				$("input[name='price_max']").val(data.to);
+			},
+			onChange: function (data) {
+				// Called every time handle position is changed
+				$("input[name='price_min']").val(data.from);
+				$("input[name='price_max']").val(data.to);
+			},
+		});
+		var rangeSlider = $(".js-range-slider").data("ionRangeSlider");
+		$("input[name='price_min']").on('input', function () {
+			console.log($(this).val())
+			var thisVal = $(this).val();
+			rangeSlider.update({
+				from: thisVal,
+			});
+		});
+		$("input[name='price_max']").on('input', function () {
+			console.log($(this).val())
+			var thisVal = $(this).val();
+			rangeSlider.update({
+				to: thisVal,
+			});
+		});
+	}
+	rangeSlider();
+
 
 });
