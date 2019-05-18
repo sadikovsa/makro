@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>Makro</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!--[if IE 9]>
+   <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+<![endif]-->
+	<!--[if lte IE 8]>
+   <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+<![endif]-->
+	<script src="libs/jquery/dist/jquery.min.js" defer></script>
+	<script src="js/libs.min.js" defer></script>
+	<script src="js/common.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-location">
+					<a href="#" class="header-location-active"><span class="icon-location"></span> Ташкент и область<span class="icon-caret-down"></span></a>
+					<ul class="header-location-list">
+						<li class="header-location-list-item"><a href="#" class="header-location-list-link">Самарканд</a></li>
+						<li class="header-location-list-item"><a href="#" class="header-location-list-link">Бухара</a></li>
+					</ul>
+				</div>
+				<ul class="header-top-menu">
+					<li class="header-top-menu-item"><a href="#" class="header-top-menu-link">Вакансии</a></li>
+					<li class="header-top-menu-item"><a href="#" class="header-top-menu-link">Политика качества</a></li>
+					<li class="header-top-menu-item"><a href="#" class="header-top-menu-link">Поставщикам</a></li>
+				</ul>
+				<div class="header-top-right-block">
+					<p class="header-top-user-block"><img src="img/icons/user.png" alt="icon"><a href="#">Вход</a> / <a href="#">Регистрация</a></p>
+					<div class="header-lang">
+						<a href="#" class="header-lang-active">Русский <span class="icon-caret-down"></span></a>
+						<ul class="header-lang-list">
+							<li class="header-lang-list-item"><a href="#" class="header-lang-list-link">English</a></li>
+							<li class="header-lang-list-item"><a href="#" class="header-lang-list-link">O`zbek</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-middle">
+				<a href="#" class="header-logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<form action="#" class="header-search">
+					<input type="text" class="header-search-field" placeholder="Поиск товаров по каталогу">
+					<input type="submit" class="header-search-btn" value="&#xe911;">
+				</form>
+				<div class="header-middle-right-block">
+					<a href="#" class="header-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="#7ac143" stroke-width="2" />
+						</svg>
+					</a>
+					<a href="#" class="header-cart"><span class="icon-cart"></span><span>152 210</span> сум</a>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="header-catalog">
+					<input type="checkbox" id="header-catalog-checkbox">
+					<label for="header-catalog-checkbox" class="header-catalog-wrapper">
+
+						Каталог товаров <span class="icon-burger"></span>
+					</label>
+					<div class="header-catalog-menu-block">
+						<ul class="header-catalog-menu">
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-1.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Хлебобулочные изделия</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-2.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Мясо</a>
+								<span class="icon-caret-right"></span>
+								<ul class="header-catalog-submenu">
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Мясо птицы</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Стейки</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Свинина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Говядина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Утка, перепела</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Кролик</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Телятина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Баранина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Утка, перепела</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Кролик</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Фарш</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Колбасы, ветчина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Колбасы, ветчина</a></li>
+								</ul>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-3.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Бакалея</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-4.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Напитки</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-5.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Молочная продукция</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-6.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Хлебобулочные изделия</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-7.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Мясо</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-2.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Бакалея</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-3.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Напитки</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-8.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Мясо</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-3.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Молочная продукция</a>
+								<span class="icon-caret-right"></span>
+							</li>
+							<li class="header-catalog-menu-item">
+								<img src="img/icons/catalog-menu/icon-9.png" alt="icon">
+								<a href="#" class="header-catalog-menu-link">Молочная продукция</a>
+								<span class="icon-caret-right"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="header-bottom-menu">
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">Магазины</a></li>
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">Акции</a></li>
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">Новости</a></li>
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">О нас</a></li>
+
+				</ul>
+				<div class="header-support">
+					<img src="img/icons/call-center.svg" alt="icon">
+					<p>Справочная служба
+						<a href="tel:+712051205">71 205 1 205</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<ul class="breadcrums">
+				<li class="breadcrums-item"><a href="#" class="breadcrums-link">Главная</a></li>
+				<li class="breadcrums-item"><a href="#" class="breadcrums-link">Каталог</a></li>
+				<li class="breadcrums-item"><a href="#" class="breadcrums-link">Молоко, сыр, яйца</a></li>
+				<li class="breadcrums-item active">Молоко</li>
+			</ul>
+		</div>
+		<section class="card-section">
+			<div class="container">
+				<div class="card-wrapper">
+					<div class="card-left-block">
+						<div class="owl-carousel card-slider">
+							<div class="card-slider-item">
+									<img src="img/catalog/catalog-big.png" alt="catalog">
+							</div>
+							<div class="card-slider-item">
+									<img src="img/catalog/catalog-big.png" alt="catalog">
+							</div>
+							<div class="card-slider-item">
+									<img src="img/catalog/catalog-big.png" alt="catalog">
+							</div>
+						</div>
+						<div class="card-links">
+							<a href="#" class="card-favorite">
+								<svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2"></path>
+								</svg>
+								В избранное
+							</a>
+							<a href="#" class="card-repost">
+								<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.26224 4.56502C5.92162 3.3846 5.54543 1.88421 4.42199 1.21382C3.29855 0.543424 1.85329 0.956885 1.19391 2.13731C0.534533 3.31774 0.910726 4.81812 2.03416 5.48851C3.1576 6.15891 4.60286 5.74545 5.26224 4.56502Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M5.26226 17.8626C5.92165 16.6822 5.54545 15.1818 4.42201 14.5114C3.29857 13.8411 1.8533 14.2545 1.19392 15.4349C0.534537 16.6153 0.910729 18.1157 2.03417 18.7861C3.15761 19.4565 4.60288 19.043 5.26226 17.8626Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M17.8062 11.2135C18.4655 10.033 18.0894 8.53269 16.9659 7.8623C15.8425 7.19191 14.3972 7.60537 13.7379 8.78578C13.0785 9.96618 13.4547 11.4666 14.5781 12.1369C15.7015 12.8073 17.1468 12.3939 17.8062 11.2135Z" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M6.18115 4.31769L12.9058 9.04466" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M5.43506 15.3472L13.654 11.408" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+
+								Поделиться
+							</a>
+						</div>
+						<div class="card-description">
+							<h3>Описание</h3>
+							<p>Голубика 125г - это сладкая северная ягода, которая славится своими превосходными вкусовыми качествами и уникальными целебными свойствами. В ней содержатся витамины группы B, А, С, К и РР, важные микроэлементы, незаменимые аминокислоты и мощные антиоксиданты. Поэтому даже небольшое количество свежих ягод может благотворно отразиться на вашем самочувствии.</p>
+						</div>
+					</div>
+					<div class="card-right-block">
+						<div class="card-right-block-top">
+							<p class="card-articulate">Артикул <span>315917</span></p>
+							<h2 class="card-title">Ежевика 125г упаковка</h2>
+							<div class="card-action-block">
+								<div class="card-prices">
+									<p class="card-old-price"><span>152 210</span> -10%</p>
+									<p class="card-new-price"><span>135 210</span> сум/шт</p>
+								</div>
+								<div class="card-button">
+									<button type="button" class="card-btn">В корзину <span class="icon-cart"></span></button>
+									<p class="card-bonus"><span>+10 баллов </span>на карту</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-nutritional">
+							<h4 class="card-nutritional-title">Пищевая ценность</h4>
+							<p class="card-nutritional-text">На 100 г продукта % от суточной нормы</p>
+							<div class="card-nutritional-wrapper">
+								<div class="card-nutritional-item">
+									<div class="card-nutritional-item-top">
+										<p class="card-nutritional-item-name">Калории</p>
+										<p class="card-nutritional-item-value">71 ккал</p>
+									</div>
+									<p class="card-nutritional-item-percent">2,8%</p>
+								</div>
+								<div class="card-nutritional-item">
+									<div class="card-nutritional-item-top">
+										<p class="card-nutritional-item-name">Белки</p>
+										<p class="card-nutritional-item-value">2,9 г</p>
+									</div>
+									<p class="card-nutritional-item-percent">3,9%</p>
+								</div>
+								<div class="card-nutritional-item">
+									<div class="card-nutritional-item-top">
+										<p class="card-nutritional-item-name">Жиры</p>
+										<p class="card-nutritional-item-value">4,5 г</p>
+									</div>
+									<p class="card-nutritional-item-percent">5,4%</p>
+								</div>
+								<div class="card-nutritional-item">
+									<div class="card-nutritional-item-top">
+										<p class="card-nutritional-item-name">Углеводы</p>
+										<p class="card-nutritional-item-value">4,7 г</p>
+									</div>
+									<p class="card-nutritional-item-percent">1,3%</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-right-block-bottom">
+							<h3 class="card-subtitle">Условия хранения</h3>
+							<table class="card-specifications">
+								<tbody>
+									<tr>
+										<td>Температура хранения макс.</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>Срок хранения</td>
+										<td>20 дней</td>
+									</tr>
+								</tbody>
+							</table>
+							<h3 class="card-subtitle">Описание товара</h3>
+							<table class="card-specifications">
+								<tbody>
+									<tr>
+										<td>Производитель</td>
+										<td>Union Export Import </td>
+									</tr>
+									<tr>
+										<td>Страна</td>
+										<td>Бангладеш</td>
+									</tr>
+									<tr>
+										<td>Тип</td>
+										<td>Голубика</td>
+									</tr>
+									<tr>
+										<td>Обработка</td>
+										<td>Свежие</td>
+									</tr>
+									<tr>
+										<td>Вес</td>
+										<td>0.125 кг</td>
+									</tr>
+									<tr>
+										<td>Тип упаковки</td>
+										<td>Пластиковая упаковка</td>
+									</tr>
+								</tbody>
+							</table>					 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-special">
+			<div class="container">
+				<a href="#" class="title">Похожие товары</a>
+				<div class="owl-carousel special-slider goods-wrapper">
+					<div class="goods-item">
+						<a href="#" class="goods-item-img-wrapper">
+							<img src="img/catalog/catalog-1.png" alt="goods">
+						</a>
+						<p class="goods-item-name">Ежевика 125г упаковка</p>
+						<div class="goods-item-prices">
+							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+							<div class="goods-item-btns">
+								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<a href="#" class="goods-item-img-wrapper">
+							<img src="img/catalog/catalog-2.png" alt="goods">
+						</a>
+						<p class="goods-item-name">Ежевика 125г упаковка</p>
+						<div class="goods-item-prices">
+							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+							<div class="goods-item-btns">
+								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<a href="#" class="goods-item-img-wrapper">
+							<img src="img/catalog/catalog-3.png" alt="goods">
+						</a>
+						<p class="goods-item-name">Ежевика 125г упаковка</p>
+						<div class="goods-item-prices">
+							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+							<div class="goods-item-btns">
+								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<a href="#" class="goods-item-img-wrapper">
+							<img src="img/catalog/catalog-1.png" alt="goods">
+						</a>
+						<p class="goods-item-name">Ежевика 125г упаковка</p>
+						<div class="goods-item-prices">
+							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+							<div class="goods-item-btns">
+								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<a href="#" class="goods-item-img-wrapper">
+							<img src="img/catalog/catalog-2.png" alt="goods">
+						</a>
+						<p class="goods-item-name">Ежевика 125г упаковка</p>
+						<div class="goods-item-prices">
+							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
+							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
+							<div class="goods-item-btns">
+								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="features">
+			<div class="container">
+				<h2 class="sr-only">Преимущества</h2>
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="features-block">
+							<img src="img/icons/warranty.png" alt="icon">
+							<p class="features-block-text">Гарантия качества продуктов</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="features-block">
+							<img src="img/icons/assortment.png" alt="icon">
+							<p class="features-block-text">Широкий ассортимент продуктов</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="features-block">
+							<img src="img/icons/bonus.png" alt="icon">
+							<p class="features-block-text">Преимущества для участников Клуба Макро</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">Интернет магазин</p>
+							<ul class="footer-block-menu">
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Помощь покупателю</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Оплата и доставка</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Обмен и возврат</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Каталог товаров</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Акции и скидки</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Маркетплейс</a></li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">Клуб Макро</p>
+							<ul class="footer-block-menu">
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Личный кабинет</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Активация карты</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Мобильное приложение</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Подарочные сертификаты</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Партнеры</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">О клубе</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">О компании</p>
+							<ul class="footer-block-menu">
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Недвижимость</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Работа в компании</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Некоммерческие закупки</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Финансовая отчетность</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">История</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Новости</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Аренда</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Горячая линия по этике</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">Контакты</p>
+							<p class="footer-block-title">Обратная связь</p>
+							<p class="footer-support">
+								Справочная служба
+								<a href="tel:+998712051205">+998 71 205 1 205</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-social">
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-facebook"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-telegram"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-vk"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-ok"></span></a></li>
+				</ul>
+				<p class="footer-copy">«Makro» 2019 &copy; Все права защищены</p>
+				<button type="button" class="back-to-top"><span class="icon-caret-up"></span></button>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

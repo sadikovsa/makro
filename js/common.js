@@ -9,18 +9,42 @@ $(function () {
 		autoplay: false,
 		smartSpeed: 1000,
 		autoplaySpeed: 1000,
+		
 		navText: ['<span class="icon-caret-left"></span>', '<span class="icon-caret-right"></span>'],
-
+		responsive:{
+        0: {
+            items:1,
+        },
+        768:{
+            items: 3,
+			margin: 10,
+        },
+        1200:{
+            items: 4
+        }
+    }
 	});
 	$('.owl-carousel.main-slider').owlCarousel({
 		items: 1,
 		loop: true,
+		margin: 0,
+		dots: true,
+		nav: true,
+		autoplay: true,
+		smartSpeed: 1000,
+		autoplaySpeed: 1000,
+		navText: ['<span class="icon-caret-left"></span>', '<span class="icon-caret-right"></span>'],
+	});
+	$('.owl-carousel.card-slider').owlCarousel({
+		items: 1,
+		loop: false,
 		margin: 20,
 		dots: true,
 		nav: true,
 		autoplay: true,
 		smartSpeed: 1000,
 		autoplaySpeed: 1000,
+		center: true,
 		navText: ['<span class="icon-caret-left"></span>', '<span class="icon-caret-right"></span>'],
 	});
 
@@ -39,7 +63,7 @@ $(function () {
 				var subMenuBlockParent = elem.parentElement;
 				var subMenuHeight = elem.clientHeight;
 				var parentOffsetTop = subMenuBlockParent.offsetTop;
-				var subMenuOffset = (offsetTop - parentOffsetTop - offsetTop - 1);
+				var subMenuOffset = (offsetTop - parentOffsetTop - offsetTop - 2);
 				elem.style.top = subMenuOffset + 'px';
 			});
 		});
