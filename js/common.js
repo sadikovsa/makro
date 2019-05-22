@@ -237,6 +237,16 @@ $(function () {
 		});
 	}
 	rangeSlider();
+	
+	
+	$('.view-change').on('change', function(){
+		var newsItem = $('.news-page .news-item');
+		
+		newsItem.each(function() {
+			$(this).toggleClass('inline');
+			console.log($(this))
+		})
+	})
 
 
 });

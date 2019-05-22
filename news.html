@@ -174,199 +174,35 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="main-slider-section">
+		<section class="news news-page">
 			<div class="container">
-				<h1 class="sr-only">Слайдер</h1>
-				<div class="owl-carousel main-slider">
-					<a href="#" class="main-slider-item">
-						<img src="img/slider/main-slider-1.jpg" alt="slider">
-					</a>
-					<a href="#" class="main-slider-item">
-						<img src="img/slider/main-slider-1.jpg" alt="slider">
-					</a>
-					<a href="#" class="main-slider-item">
-						<img src="img/slider/main-slider-1.jpg" alt="slider">
-					</a>
+				<div class="news-top">
+					<h2 class="title">Новости</h2>
+					<p class="news-view-change-wrapper">
+						<label for="news-view-block" class="news-view-change">
+							<input type="radio" name="news-view-change" class="view-change" id="news-view-block" checked>
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 1C0 0.447715 0.447715 0 1 0H6C6.55228 0 7 0.447715 7 1V6C7 6.55228 6.55228 7 6 7H1C0.447715 7 0 6.55228 0 6V1Z" fill="#C4C4C4" />
+								<path d="M0 10C0 9.44772 0.447715 9 1 9H6C6.55228 9 7 9.44772 7 10V15C7 15.5523 6.55228 16 6 16H1C0.447715 16 0 15.5523 0 15V10Z" fill="#C4C4C4" />
+								<path d="M9 1C9 0.447715 9.44772 0 10 0H15C15.5523 0 16 0.447715 16 1V6C16 6.55228 15.5523 7 15 7H10C9.44772 7 9 6.55228 9 6V1Z" fill="#C4C4C4" />
+								<path d="M9 10C9 9.44772 9.44772 9 10 9H15C15.5523 9 16 9.44772 16 10V15C16 15.5523 15.5523 16 15 16H10C9.44772 16 9 15.5523 9 15V10Z" fill="#C4C4C4" />
+							</svg>
+						</label>
+						<label for="news-view-inline" class="news-view-change">
+							<input type="radio" name="news-view-change" class="view-change" id="news-view-inline">
+							<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 13.8667C0 13.2776 0.474052 12.8 1.05882 12.8H2.11765C2.70242 12.8 3.17647 13.2776 3.17647 13.8667V14.9333C3.17647 15.5224 2.70242 16 2.11765 16H1.05882C0.474051 16 0 15.5224 0 14.9333V13.8667Z" fill="#C4C4C4" />
+								<path d="M0 1.06667C0 0.477563 0.474052 0 1.05882 0H2.11765C2.70242 0 3.17647 0.477563 3.17647 1.06667V2.13333C3.17647 2.72244 2.70242 3.2 2.11765 3.2H1.05882C0.474051 3.2 0 2.72244 0 2.13333V1.06667Z" fill="#C4C4C4" />
+								<path d="M0 7.46667C0 6.87756 0.474052 6.4 1.05882 6.4H2.11765C2.70242 6.4 3.17647 6.87756 3.17647 7.46667V8.53333C3.17647 9.12244 2.70242 9.6 2.11765 9.6H1.05882C0.474051 9.6 0 9.12244 0 8.53333V7.46667Z" fill="#C4C4C4" />
+								<path d="M5.29412 13.8667C5.29412 13.2776 5.76817 12.8 6.35294 12.8H16.9412C17.5259 12.8 18 13.2776 18 13.8667V14.9333C18 15.5224 17.5259 16 16.9412 16H6.35294C5.76817 16 5.29412 15.5224 5.29412 14.9333V13.8667Z" fill="#C4C4C4" />
+								<path d="M5.29412 1.06667C5.29412 0.477563 5.76817 0 6.35294 0H16.9412C17.5259 0 18 0.477563 18 1.06667V2.13333C18 2.72244 17.5259 3.2 16.9412 3.2H6.35294C5.76817 3.2 5.29412 2.72244 5.29412 2.13333V1.06667Z" fill="#C4C4C4" />
+								<path d="M5.29412 7.46667C5.29412 6.87756 5.76817 6.4 6.35294 6.4H16.9412C17.5259 6.4 18 6.87756 18 7.46667V8.53333C18 9.12244 17.5259 9.6 16.9412 9.6H6.35294C5.76817 9.6 5.29412 9.12244 5.29412 8.53333V7.46667Z" fill="#C4C4C4" />
+							</svg>
+
+
+						</label>
+					</p>
 				</div>
-			</div>
-		</section>
-		<section class="special">
-			<div class="container">
-				<a href="#" class="title link">Товары по акции</a>
-				<div class="owl-carousel special-slider goods-wrapper">
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-1.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-2.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-3.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-1.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-2.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="special">
-			<div class="container">
-				<a href="#" class="title">Товары для мам и детей</a>
-				<div class="owl-carousel special-slider goods-wrapper">
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-1.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-2.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-3.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-1.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="goods-item">
-						<a href="#" class="goods-item-img-wrapper">
-							<img src="img/catalog/catalog-2.png" alt="goods">
-						</a>
-						<p class="goods-item-name">Ежевика 125г упаковка</p>
-						<div class="goods-item-prices">
-							<p class="goods-item-old-price"><span>152 210</span> -10%</p>
-							<p class="goods-item-new-price"><span>135 210</span> сум/шт</p>
-							<div class="goods-item-btns">
-								<button type="button" class="goods-item-btn">В корзину <span class="icon-cart"></span></button> <button type="button" class="goods-item-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="" stroke-width="2" />
-									</svg>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="news">
-			<div class="container">
-				<h2 class="title">Новости</h2>
 				<div class="news-wrapper">
 					<div class="news-item">
 						<a href="#" class="news-img-wrapper">
@@ -408,34 +244,97 @@
 							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
 						</div>
 					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-1.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Итоги первой недели акции - Готовь, Выигрывай, Отдыхай!</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-2.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Угадайте финалистов и выиграйте сертификаты на 300.000, 200.000, 100.000 сумов.</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-1.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Итоги первой недели акции - Готовь, Выигрывай, Отдыхай!</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-2.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Угадайте финалистов и выиграйте сертификаты на 300.000, 200.000, 100.000 сумов.</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-1.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Итоги первой недели акции - Готовь, Выигрывай, Отдыхай!</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-2.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Угадайте финалистов и выиграйте сертификаты на 300.000, 200.000, 100.000 сумов.</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-1.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Итоги первой недели акции - Готовь, Выигрывай, Отдыхай!</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
+					<div class="news-item">
+						<a href="#" class="news-img-wrapper">
+							<img src="img/news/news-2.jpg" alt="news">
+						</a>
+						<div class="news-item-content">
+							<span class="news-date">03.07.2018</span>
+							<a href="#" class="news-title">Угадайте финалистов и выиграйте сертификаты на 300.000, 200.000, 100.000 сумов.</a>
+							<p class="news-text">Условия очень простые: 1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы 2. Отправьте фото чека в наш бот @Makrosupermarketbot 3. Участвуйте еженедельном розыгрыше. 4. Выигрывайте путевку на двоих в дом отдыха Небеса! Сроки акции с 26 июня по 17 июля 2018 года. Общие условия:</p>
+						</div>
+					</div>
 				</div>
+				<ul class="pagination">
+					<li class="pagination-item"><a href="#" class="pagination-link"><span class="icon-caret-left"></span></a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link active">1</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link"><span class="icon-caret-right"></span></a></li>
+				</ul>
 			</div>
 		</section>
-		<section class="features">
-			<div class="container">
-				<h2 class="sr-only">Преимущества</h2>
-				<div class="row">
-					<div class="col-12 col-md-4">
-						<div class="features-block">
-							<img src="img/icons/warranty.png" alt="icon">
-							<p class="features-block-text">Гарантия качества продуктов</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="features-block">
-							<img src="img/icons/assortment.png" alt="icon">
-							<p class="features-block-text">Широкий ассортимент продуктов</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="features-block">
-							<img src="img/icons/bonus.png" alt="icon">
-							<p class="features-block-text">Преимущества для участников Клуба Макро</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+
 	</main>
 	<footer class="footer">
 		<div class="container">
