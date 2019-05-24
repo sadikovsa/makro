@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>Makro</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!--[if IE 9]>
+   <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+<![endif]-->
+	<!--[if lte IE 8]>
+   <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>
+<![endif]-->
+	<script src="libs/jquery/dist/jquery.min.js" defer></script>
+	<script src="js/libs.min.js" defer></script>
+	<script src="js/common.js" defer></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="header-location">
+					<a href="#" class="header-location-active"><span class="icon-location"></span> Ташкент и область<span class="icon-caret-down"></span></a>
+					<ul class="header-location-list">
+						<li class="header-location-list-item"><a href="#" class="header-location-list-link">Самарканд</a></li>
+						<li class="header-location-list-item"><a href="#" class="header-location-list-link">Бухара</a></li>
+					</ul>
+				</div>
+				<ul class="header-top-menu">
+					<li class="header-top-menu-item"><a href="#" class="header-top-menu-link">Вакансии</a></li>
+					<li class="header-top-menu-item"><a href="#" class="header-top-menu-link">Политика качества</a></li>
+					<li class="header-top-menu-item"><a href="#" class="header-top-menu-link">Поставщикам</a></li>
+				</ul>
+				<div class="header-top-right-block">
+					<p class="header-top-user-block"><img src="img/icons/user.png" alt="icon"><a href="#">Вход</a> / <a href="#">Регистрация</a></p>
+					<div class="header-lang">
+						<a href="#" class="header-lang-active">Русский <span class="icon-caret-down"></span></a>
+						<ul class="header-lang-list">
+							<li class="header-lang-list-item"><a href="#" class="header-lang-list-link">English</a></li>
+							<li class="header-lang-list-item"><a href="#" class="header-lang-list-link">O`zbek</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-middle">
+				<a href="#" class="header-logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<form action="#" class="header-search">
+					<input type="text" class="header-search-field" placeholder="Поиск товаров по каталогу">
+					<input type="submit" class="header-search-btn" value="&#xe911;">
+				</form>
+				<div class="header-middle-mobile-block">
+					<a href="#" class="header-mobile-user">
+						<svg width="25" height="24" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.50005 8.17393C10.4811 8.17393 12.087 6.56799 12.087 4.58697C12.087 2.60594 10.4811 1 8.50005 1C6.51903 1 4.91309 2.60594 4.91309 4.58697C4.91309 6.56799 6.51903 8.17393 8.50005 8.17393Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M1.02283 15.9999C1.00762 15.8116 1 15.6228 1 15.4339C1 13.5084 1.79018 11.6618 3.19671 10.3003C4.60323 8.93878 6.51088 8.17389 8.50001 8.17389C9.48493 8.17389 10.4602 8.36167 11.3701 8.72652C12.2801 9.09137 13.1069 9.62614 13.8033 10.3003C14.4998 10.9744 15.0522 11.7748 15.4291 12.6556C15.806 13.5364 16 14.4805 16 15.4339V15.4339C16 15.6228 15.9924 15.8117 15.9772 16M1.02283 15.9999H15.9772H1.02283Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+
+					</a>
+					<a href="#" class="header-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="#7ac143" stroke-width="2" />
+						</svg>
+					</a>
+					<a href="#" class="header-cart"><span class="icon-cart" aria-label="cart"></span></a>
+					<div class="burger d-flex d-md-none">
+						<input type="checkbox" id="burgerBtn" class="burger-checkbox d-none">
+						<label for="burgerBtn">
+							<div class="hamburger">
+								<span class="bar bar1"></span>
+								<span class="bar bar2"></span>
+								<span class="bar bar4"></span>
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="header-middle-right-block">
+					<a href="#" class="header-favorite"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.9268 4.19018C19.9267 -1.64019 13.7475 2.00183 12.2383 4.19017C10.4266 1.85979 4.42644 -1.64017 1.42644 4.19017C-1.57356 10.0205 12.2383 19.36 12.2383 19.36C12.2383 19.36 25.9268 10.0205 22.9268 4.19018Z" stroke="#7ac143" stroke-width="2" />
+						</svg>
+					</a>
+					<a href="#" class="header-cart"><span class="icon-cart"></span><span>152 210</span> сум</a>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="header-catalog">
+					<input type="checkbox" id="header-catalog-checkbox">
+					<label for="header-catalog-checkbox" class="header-catalog-wrapper">
+
+						Каталог товаров <span class="icon-burger"></span>
+					</label>
+					<div class="header-catalog-menu-block">
+						<ul class="header-catalog-menu">
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-1.png" alt="icon">Хлебобулочные изделия<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-2.png" alt="icon"> Мясо <span class="icon-caret-right"></span></a>
+								<ul class="header-catalog-submenu">
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Мясо птицы</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Стейки</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Свинина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Говядина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Утка, перепела</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Кролик</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Телятина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Баранина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Утка, перепела</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Кролик</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Фарш</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Колбасы, ветчина</a></li>
+									<li class="header-catalog-submenu-item"><a href="#" class="header-catalog-submenu-link">Колбасы, ветчина</a></li>
+								</ul>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-3.png" alt="icon">Бакалея<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-4.png" alt="icon">Напитки<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-5.png" alt="icon">Молочная продукция<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-6.png" alt="icon">Хлебобулочные изделия<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-7.png" alt="icon">Мясо<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-2.png" alt="icon">Бакалея<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-3.png" alt="icon">Напитки<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-8.png" alt="icon">Мясо<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-3.png" alt="icon">Молочная продукция<span class="icon-caret-right"></span></a>
+							</li>
+							<li class="header-catalog-menu-item">
+								<a href="#" class="header-catalog-menu-link"><img src="img/icons/catalog-menu/icon-9.png" alt="icon">Молочная продукция<span class="icon-caret-right"></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="header-bottom-menu">
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">Магазины</a></li>
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">Акции</a></li>
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">Новости</a></li>
+					<li class="header-bottom-menu-item"><a href="#" class="header-bottom-menu-link">О нас</a></li>
+
+				</ul>
+				<div class="header-support">
+					<img src="img/icons/call-center.svg" alt="icon">
+					<p>Справочная служба
+						<a href="tel:+712051205">71 205 1 205</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<ul class="breadcrums">
+				<li class="breadcrums-item"><a href="#" class="breadcrums-link">Главная</a></li>
+				<li class="breadcrums-item"><a href="#" class="breadcrums-link">Новости</a></li>
+				<li class="breadcrums-item active">Итоги акции - Готовь, Выигрывай, Отдыхай!</li>
+			</ul>
+		</div>
+
+		<section class="one-news">
+			<div class="container">
+				<div class="one-news-wrapper">
+					<div class="one-news-right">
+						<img src="img/news/news-1.jpg" alt="news">
+					</div>
+					<div class="one-news-left">
+						<h1>Итоги акции - Готовь, Выигрывай, Отдых</h1>
+						<div class="one-news-info">
+							<p class="one-news-date">03/07/2018</p>
+							<ul class="one-news-social">
+								<li class="one-news-social-item">
+								<a href="#" class="one-news-social-link"><span class="icon-facebook"></span></a>
+								</li>
+								<li class="one-news-social-item">
+								<a href="#" class="one-news-social-link"><span class="icon-telegram"></span></a>
+								</li>
+								<li class="one-news-social-item">
+								<a href="#" class="one-news-social-link"><span class="icon-vk"></span></a>
+								</li>
+								<li class="one-news-social-item">
+								<a href="#" class="one-news-social-link"><span class="icon-ok"></span></a>
+								</li>
+							</ul>
+						</div>
+						<div class="one-news-content">
+							<p>Условия очень простые:</p>
+							<p>1. Купите горошек и кукурузу Bonduelle, можете совершить покупку на выбор 2 горшка или две кукурузы</p>
+							<p>2. Отправьте фото чека в наш бот @Makrosupermarketbot</p>
+							<p>3. Участвуйте в еженедельном розыгрыше.</p>
+							<p>4. Выигрывайте путевку на двоих в дом отдыха Небеса!</p>
+							<p>Сроки акции с 26 июня по 17 июля 2018 года.</p>
+							<p>Общие условия:</p>
+							<p>Организатором конкурса является ООО «Darvoza savdo» ТМ Makro;</p>
+							<p>Организатор устанавливает сроки проведения и правила проведения конкурса;</p>
+							<p>Розыгрыш будет проводится еженедельно, путем генератора случайных чисел random. org итоги будут опубликованы в следующие дни: 03.07.2018 г. – 1 неделя 10.07.2018 г. – 2 неделя 17.07.2018 г. – 3 неделя</p>
+							<p>4. Каждый участник может принять участие в розыгрыше несколько раз, при условии совершения покупки неоднократно. То есть чем больше покупок, тем больше ваши шансы на победу;</p>
+							<p>5. Дубликаты чеков, отправленные в бот к розыгрышу не принимаются;</p>
+							<p>6. К участию в розыгрыше не принимаются покупки совершенные ранее 26.06.2018 г.;</p>
+							<p>7. К розыгрышу принимаются только чеки, в которых четко видно: наименование продукта, дата распечатки чека;</p>
+							<p>8. Организаторы розыгрыша могут менять сроки проведения акции;</p>
+							<p>9. В розыгрыше не вправе участвовать работники и родственники Организатора;</p>
+							<p>10. В Акции могут участвовать граждане Узбекистана достигшие совершеннолетия. Желаем всем побед!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">Интернет магазин</p>
+							<ul class="footer-block-menu">
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Помощь покупателю</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Оплата и доставка</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Обмен и возврат</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Каталог товаров</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Акции и скидки</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Маркетплейс</a></li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">Клуб Макро</p>
+							<ul class="footer-block-menu">
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Личный кабинет</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Активация карты</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Мобильное приложение</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Подарочные сертификаты</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Партнеры</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">О клубе</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">О компании</p>
+							<ul class="footer-block-menu">
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Недвижимость</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Работа в компании</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Некоммерческие закупки</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Финансовая отчетность</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">История</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Новости</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Аренда</a></li>
+								<li class="footer-block-menu-item"><a href="#" class="footer-block-menu-link">Горячая линия по этике</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg-3">
+						<div class="footer-block">
+							<p class="footer-block-title">Контакты</p>
+							<p class="footer-block-title">Обратная связь</p>
+							<p class="footer-support">
+								Справочная служба
+								<a href="tel:+998712051205">+998 71 205 1 205</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-social">
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-facebook"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-telegram"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-vk"></span></a></li>
+					<li class="footer-social-item"><a href="#" class="footer-social-link" aria-label="social"><span class="icon-ok"></span></a></li>
+				</ul>
+				<p class="footer-copy">«Makro» 2019 &copy; Все права защищены</p>
+				<button type="button" class="back-to-top"><span class="icon-caret-up"></span></button>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
