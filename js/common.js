@@ -294,7 +294,7 @@ function init() {
 				// Необходимо указать данный тип макета.
 				iconLayout: 'default#imageWithContent',
 				// Своё изображение иконки метки.
-				iconImageHref: '../img/icons/pin.png',
+				iconImageHref: 'img/icons/pin.png',
 				// Размеры метки.
 				iconImageSize: [32, 40],
 				// Смещение левого верхнего угла иконки относительно
@@ -313,7 +313,7 @@ function init() {
 				// Необходимо указать данный тип макета.
 				iconLayout: 'default#imageWithContent',
 				// Своё изображение иконки метки.
-				iconImageHref: '../img/icons/pin.png',
+				iconImageHref: 'img/icons/pin.png',
 				// Размеры метки.
 				iconImageSize: [32, 40],
 				// Смещение левого верхнего угла иконки относительно
@@ -332,7 +332,7 @@ function init() {
 				// Необходимо указать данный тип макета.
 				iconLayout: 'default#imageWithContent',
 				// Своё изображение иконки метки.
-				iconImageHref: '../img/icons/pin.png',
+				iconImageHref: 'img/icons/pin.png',
 				// Размеры метки.
 				iconImageSize: [32, 40],
 				// Смещение левого верхнего угла иконки относительно
@@ -351,7 +351,7 @@ function init() {
 				// Необходимо указать данный тип макета.
 				iconLayout: 'default#imageWithContent',
 				// Своё изображение иконки метки.
-				iconImageHref: '../img/icons/pin.png',
+				iconImageHref: 'img/icons/pin.png',
 				// Размеры метки.
 				iconImageSize: [32, 40],
 				// Смещение левого верхнего угла иконки относительно
@@ -400,7 +400,7 @@ function init() {
 					// Необходимо указать данный тип макета.
 					iconLayout: 'default#imageWithContent',
 					// Своё изображение иконки метки.
-					iconImageHref: '../img/icons/pin.png',
+					iconImageHref: 'img/icons/pin.png',
 					// Размеры метки.
 					iconImageSize: [32, 40],
 					// Смещение левого верхнего угла иконки относительно
