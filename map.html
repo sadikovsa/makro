@@ -37,7 +37,9 @@
 <![endif]-->
 	<script src="libs/jquery/dist/jquery.min.js" defer></script>
 	<script src="js/libs.min.js" defer></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=5edc3247-cc3c-4b10-905b-3ccaa01ec8b7" type="text/javascript" defer></script>
 	<script src="js/common.js" defer></script>
+
 </head>
 
 <body>
@@ -195,45 +197,243 @@
 			</ul>
 		</div>
 
-		<section class="loyalty">
+		<section class="map">
 			<div class="container">
+				<h2 class="map-title">Адреса магазинов сети «Makro»</h2>
 				<div class="row">
-					<div class="col-12 col-md-4 col-xl-3">
-						<a href="#" class="loyalty-links">Активировать карту</a>
-					</div>
-					<div class="col-12 col-md-4 col-xl-3">
-						<a href="#" class="loyalty-links">Личный кабинет «Мой Макро»</a>
-					</div>
-				</div>
-				<h2 class="loyalty-title text-center">Выбирите карту клуба «Макро»</h2>
-				<div class="row">
-					<div class="col-12 col-md-4 col-xl-3">
-						<div class="loyalty-card">
-							<p class="loyalty-card-img-wrap">
+					<div class="col-12 col-lg-6 order-2 order-lg-1">
+						<ul class="nav nav-tabs filials-nav" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="tashkent-tab" data-toggle="tab" href="#tashkent" role="tab" aria-controls="tashkent" aria-selected="true">Ташкент</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="samarkand-tab" data-toggle="tab" href="#samarkand" role="tab" aria-controls="samarkand" aria-selected="false">Самарканд, Карши, Навои</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="dolina-tab" data-toggle="tab" href="#dolina" role="tab" aria-controls="dolina" aria-selected="false">Ферганская долина</a>
+							</li>
+						</ul>
+						<div class="tab-content filials-tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="tashkent" role="tabpanel" aria-labelledby="tashkent-tab">
+								<div class="filials-block" data-location="41.291355, 69.223804" data-address="г. Ташкент, Чиланзарский р-н, метро Новза">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro ТашМИ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.291984, 69.210975" data-address="г. Ташкент, Чиланзарский р-н, Катартал, ТЦ Парус">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Саёхат</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.334395, 69.216259" data-address="г. Ташкент, Олмазарский р-н, метро Тинчлик">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro SamPI</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.363634,69.204377" data-address="г. Ташкент, Олмазарский р-н, Каракамыш">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Кораташ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.291355, 69.223804" data-address="г. Ташкент, Чиланзарский р-н, метро Новза">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro ТашМИ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.291984, 69.210975" data-address="г. Ташкент, Чиланзарский р-н, Катартал, ТЦ Парус">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Саёхат</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.334395, 69.216259" data-address="г. Ташкент, Олмазарский р-н, метро Тинчлик">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro SamPI</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.363634,69.204377" data-address="г. Ташкент, Олмазарский р-н, Каракамыш">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Кораташ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
 
-							</p>
-							<p class="loyalty-card-name">Виртуальная карта клуба «Макро»</p>
-							<div class="loyalty-card-bonus-wrap">
-								<p class="loyalty-card-bonus">Копим:<span>10 сум = 1 балл</span></p>
-								<p class="loyalty-card-bonus">Тратим:<span>10 баллов = 1 сум</span></p>
 							</div>
-							<a href="#" class="loyalty-card-btn">Оформить карту</a>
-							<a href="#" class="loyalty-card-info">Подробнее о карте</a>
+							<div class="tab-pane fade" id="samarkand" role="tabpanel" aria-labelledby="samarkand-tab">
+								<div class="filials-block" data-location="41.291355, 69.223804" data-address="г. Ташкент, Чиланзарский р-н, метро Новза">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro ТашМИ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.291984, 69.210975" data-address="г. Ташкент, Чиланзарский р-н, Катартал, ТЦ Парус">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Саёхат</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.334395, 69.216259" data-address="г. Ташкент, Олмазарский р-н, метро Тинчлик">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro SamPI</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="dolina" role="tabpanel" aria-labelledby="dolina-tab">
+								<div class="filials-block" data-location="41.291355, 69.223804" data-address="г. Ташкент, Чиланзарский р-н, метро Новза">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro ТашМИ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.291984, 69.210975" data-address="г. Ташкент, Чиланзарский р-н, Катартал, ТЦ Парус">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Саёхат</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.334395, 69.216259" data-address="г. Ташкент, Олмазарский р-н, метро Тинчлик">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro SamPI</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.363634,69.204377" data-address="г. Ташкент, Олмазарский р-н, Каракамыш">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Кораташ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.291355, 69.223804" data-address="г. Ташкент, Чиланзарский р-н, метро Новза">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro ТашМИ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.291984, 69.210975" data-address="г. Ташкент, Чиланзарский р-н, Катартал, ТЦ Парус">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Саёхат</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.334395, 69.216259" data-address="г. Ташкент, Олмазарский р-н, метро Тинчлик">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro SamPI</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+								<div class="filials-block" data-location="41.363634,69.204377" data-address="г. Ташкент, Олмазарский р-н, Каракамыш">
+									<div class="filials-block-addresses">
+										<p class="filials-block-name">Makro Кораташ</p>
+										<p class="filials-block-address">г.Ташкент Алмазарский р-н ул.Фаробий д.448А</p>
+									</div>
+									<div class="filials-block-work-times">
+										<p class="filials-block-work-time">Пн - Пт 08:00 - 01:00</p>
+										<p class="filials-block-work-time">Сб - Вс 08:00 - 01:00</p>
+									</div>
+									<span class="icon-caret-right"></span>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-4 col-xl-3">
-						<div class="loyalty-card">
-							<p class="loyalty-card-img-wrap">
-
-							</p>
-							<p class="loyalty-card-name">Дебетовая карта «NBU - Makro»</p>
-							<div class="loyalty-card-bonus-wrap">
-								<p class="loyalty-card-bonus">Копим:<span>10 сум = 1 балл</span></p>
-								<p class="loyalty-card-bonus">Тратим:<span>10 баллов = 1 сум</span></p>
-							</div>
-							<a href="#" class="loyalty-card-btn">Оформить карту</a>
-							<a href="#" class="loyalty-card-info">Подробнее о карте</a>
-						</div>
+					<div class="col-12 col-lg-6 order-1 order-lg-2">
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>
