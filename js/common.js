@@ -1,5 +1,5 @@
 $(function () {
-// sliders
+	// sliders
 	$('.owl-carousel.special-slider').owlCarousel({
 		items: 4,
 		loop: true,
@@ -89,9 +89,9 @@ $(function () {
 		$(window).on('load', mainMenu);
 		$(document).ready(mainMenu);
 	}
-	
-	
-// burger and catalog menu
+
+
+	// burger and catalog menu
 	var burger;
 	var mobileContent = $('.header-catalog-menu-block');
 	if ($(window).width() < 767) {
@@ -113,7 +113,7 @@ $(function () {
 			}
 		});
 	}
-	
+
 	burger.on('change', function () {
 		mobileContent.toggleClass('show');
 	});
@@ -160,7 +160,7 @@ $(function () {
 	$(window).on('resize', backToTop);
 	$(document).ready(backToTop);
 
-	
+
 	// counter input
 	$('.counter-input').on('input change paste', function () {
 		$(this).val(this.value.replace(/[^0-9\-]/, '')); // запрещаем ввод любых символов, кроме цифр и знака минуса
@@ -183,8 +183,8 @@ $(function () {
 		input.attr('data-val', value).change();
 		input.val(total).change(); // выводим полученное value в инпут; триггер .change() - на случай, если на изменение этого инпута у вас уже объявлен еще какой-то обработчик
 	});
-	
-	
+
+
 	// change active sorting
 	$('.goods-items-sorting').on('click', function (e) {
 		var target = e.target;
@@ -193,7 +193,7 @@ $(function () {
 			$(this).find('.goods-items-sorting-active').html(targetContent);
 		}
 	});
-	
+
 	// range slider
 	function rangeSlider() {
 		var minAver = $("input[name='price_range']").attr("min");
@@ -249,8 +249,8 @@ $(function () {
 			$(this).toggleClass('inline');
 		})
 	})
-	
-	
+
+
 	// show/hide password
 	$('.icon-pswd')
 		.mouseup(function (e) {
@@ -263,48 +263,64 @@ $(function () {
 			var input = $(this).prev();
 			input.attr('type', 'text');
 		});
-	
-	
-	
-	
+
+	// add/remove children, animal
+	function removeField() {
+		$('.profile-edit-form-remove').on('click', function (e) {
+			e.preventDefault();
+			var parent = $(this).parent();
+			parent.remove();
+		});
+	};
+	removeField();
+
+
+	$('.profile-edit-form-add').on('click', function (e) {
+		e.preventDefault();
+		var parent = $(this).parent();
+		var children = parent.find('p').eq(0).clone();
+		children.removeClass('d-none');
+		parent.find('.profile-edit-form-add').before(children);
+		removeField();
+	})
+
+var mapBlock = document.querySelector('#map');
+		if (mapBlock) {
 	// map
 	ymaps.ready(init);
+	function init() {
+			var myMap;
+			myMap = new ymaps.Map(mapBlock, {
+					center: [41.311151, 69.279737],
+					zoom: 12
+				}, {
+					searchControlProvider: 'yandex#search'
+				}),
 
-function init() {
-	var mapBlock = document.querySelector('#map');
-	if (mapBlock) {
-		var myMap;
-		myMap = new ymaps.Map(mapBlock, {
-				center: [41.311151, 69.279737],
-				zoom: 12
-			}, {
-				searchControlProvider: 'yandex#search'
-			}),
+				// Создаём макет содержимого.
+				MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+				),
 
-			// Создаём макет содержимого.
-			MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-				'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-			),
-
-			myPlacemark1 = new ymaps.Placemark([41.291355, 69.223804], {
-				hintContent: '"Makro" Navza',
-				balloonContent: 'г. Ташкент, Чиланзарский р-н, метро Новза',
-			}, {
-				// Опции.
-				// Необходимо указать данный тип макета.
-				iconLayout: 'default#imageWithContent',
-				// Своё изображение иконки метки.
-				iconImageHref: 'img/icons/pin.png',
-				// Размеры метки.
-				iconImageSize: [32, 40],
-				// Смещение левого верхнего угла иконки относительно
-				// её "ножки" (точки привязки).
-				iconImageOffset: [-20, -40],
-				// Смещение слоя с содержимым относительно слоя с картинкой.
-				iconContentOffset: [50, 50],
-				// Макет содержимого.
-				iconContentLayout: MyIconContentLayout
-			});
+				myPlacemark1 = new ymaps.Placemark([41.291355, 69.223804], {
+					hintContent: '"Makro" Navza',
+					balloonContent: 'г. Ташкент, Чиланзарский р-н, метро Новза',
+				}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#imageWithContent',
+					// Своё изображение иконки метки.
+					iconImageHref: 'img/icons/pin.png',
+					// Размеры метки.
+					iconImageSize: [32, 40],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-20, -40],
+					// Смещение слоя с содержимым относительно слоя с картинкой.
+					iconContentOffset: [50, 50],
+					// Макет содержимого.
+					iconContentLayout: MyIconContentLayout
+				});
 			myPlacemark2 = new ymaps.Placemark([41.291984, 69.210975], {
 				hintContent: '"Makro" parus',
 				balloonContent: 'г. Ташкент, Чиланзарский р-н, Катартал, ТЦ "Парус"',
@@ -363,60 +379,61 @@ function init() {
 				iconContentLayout: MyIconContentLayout
 			});
 
-		myMap.geoObjects
-			.add(myPlacemark1)
-			.add(myPlacemark2)
-			.add(myPlacemark3)
-			.add(myPlacemark4);
-		myMap.behaviors.disable('scrollZoom');
-	}
-	$('.filials-block').on('click', function () {
-		$('.filials-block').each(function(){
-			$(this).removeClass('active');
-		})
-		$(this).addClass('active');
-		if ($(this).hasClass('active')) {
-			var mapLocation = $(this).attr('data-location').split(',');
-			var address = $(this).attr('data-address');
-			myMap.destroy();
-			var lon = parseFloat(mapLocation[1]);
-			myMap = new ymaps.Map(mapBlock, {
-					center: [mapLocation[0], lon],
-					zoom: 18
-				}, {
-					searchControlProvider: 'yandex#search'
-				}),
-
-				// Создаём макет содержимого.
-				MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-				),
-
-				myPlacemark1 = new ymaps.Placemark([mapLocation[0], mapLocation[1]], {
-					hintContent: 'Makro',
-					balloonContent: address,
-				}, {
-					// Опции.
-					// Необходимо указать данный тип макета.
-					iconLayout: 'default#imageWithContent',
-					// Своё изображение иконки метки.
-					iconImageHref: 'img/icons/pin.png',
-					// Размеры метки.
-					iconImageSize: [32, 40],
-					// Смещение левого верхнего угла иконки относительно
-					// её "ножки" (точки привязки).
-					iconImageOffset: [-20, -40],
-					// Смещение слоя с содержимым относительно слоя с картинкой.
-					iconContentOffset: [50, 50],
-					// Макет содержимого.
-					iconContentLayout: MyIconContentLayout
-				});
-
 			myMap.geoObjects
-				.add(myPlacemark1);
+				.add(myPlacemark1)
+				.add(myPlacemark2)
+				.add(myPlacemark3)
+				.add(myPlacemark4);
 			myMap.behaviors.disable('scrollZoom');
-		} 
-	});
-};
+	
+		$('.filials-block').on('click', function () {
+			$('.filials-block').each(function () {
+				$(this).removeClass('active');
+			})
+			$(this).addClass('active');
+			if ($(this).hasClass('active')) {
+				var mapLocation = $(this).attr('data-location').split(',');
+				var address = $(this).attr('data-address');
+				myMap.destroy();
+				var lon = parseFloat(mapLocation[1]);
+				myMap = new ymaps.Map(mapBlock, {
+						center: [mapLocation[0], lon],
+						zoom: 18
+					}, {
+						searchControlProvider: 'yandex#search'
+					}),
+
+					// Создаём макет содержимого.
+					MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+						'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+					),
+
+					myPlacemark1 = new ymaps.Placemark([mapLocation[0], mapLocation[1]], {
+						hintContent: 'Makro',
+						balloonContent: address,
+					}, {
+						// Опции.
+						// Необходимо указать данный тип макета.
+						iconLayout: 'default#imageWithContent',
+						// Своё изображение иконки метки.
+						iconImageHref: 'img/icons/pin.png',
+						// Размеры метки.
+						iconImageSize: [32, 40],
+						// Смещение левого верхнего угла иконки относительно
+						// её "ножки" (точки привязки).
+						iconImageOffset: [-20, -40],
+						// Смещение слоя с содержимым относительно слоя с картинкой.
+						iconContentOffset: [50, 50],
+						// Макет содержимого.
+						iconContentLayout: MyIconContentLayout
+					});
+
+				myMap.geoObjects
+					.add(myPlacemark1);
+				myMap.behaviors.disable('scrollZoom');
+			}
+		});
+	};
+			}
 
 });
