@@ -49,7 +49,9 @@ $(function () {
 	});
 
 	// phone mask
-	$(".phone").mask("+9(999) 999-99-99");
+	$.mask.definitions['9'] = '';
+	$.mask.definitions['n'] = '[0-9]';	
+	$(".phone").mask("+998(nn)nnn-nn-nn");
 
 	// Main Menu
 	function mainMenu() {
