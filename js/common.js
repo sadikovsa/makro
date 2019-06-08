@@ -50,7 +50,7 @@ $(function () {
 
 	// phone mask
 	$.mask.definitions['9'] = '';
-	$.mask.definitions['n'] = '[0-9]';	
+	$.mask.definitions['n'] = '[0-9]';
 	$(".phone").mask("+998(nn)nnn-nn-nn");
 
 	// Main Menu
@@ -286,11 +286,43 @@ $(function () {
 		removeField();
 	})
 
-var mapBlock = document.querySelector('#map');
-		if (mapBlock) {
+	// date time picker
+	$('#datetimepicker1').datetimepicker({
+		format: 'L',
+		locale: 'ru',
+		icons: {
+			up: "icon-caret-up",
+			down: "icon-caret-down",
+			previous: "icon-caret-left",
+			next: "icon-caret-right"
+		},
+	});
+	$('#datetimepicker2').datetimepicker({
+		format: 'L',
+		locale: 'ru',
+		useCurrent: false,
+		icons: {
+			up: "icon-caret-up",
+			down: "icon-caret-down",
+			previous: "icon-caret-left",
+			next: "icon-caret-right"
+		},
+	});
+
+	$("#datetimepicker1").on("change.datetimepicker", function (e) {
+		$('#datetimepicker2').datetimepicker('minDate', e.date);
+	});
+	$("#datetimepicker2").on("change.datetimepicker", function (e) {
+		$('#datetimepicker1').datetimepicker('maxDate', e.date);
+	});
+
 	// map
-	ymaps.ready(init);
-	function init() {
+	var mapBlock = document.querySelector('#map');
+	if (mapBlock) {
+
+		ymaps.ready(init);
+
+		function init() {
 			var myMap;
 			myMap = new ymaps.Map(mapBlock, {
 					center: [41.311151, 69.279737],
@@ -387,55 +419,55 @@ var mapBlock = document.querySelector('#map');
 				.add(myPlacemark3)
 				.add(myPlacemark4);
 			myMap.behaviors.disable('scrollZoom');
-	
-		$('.filials-block').on('click', function () {
-			$('.filials-block').each(function () {
-				$(this).removeClass('active');
-			})
-			$(this).addClass('active');
-			if ($(this).hasClass('active')) {
-				var mapLocation = $(this).attr('data-location').split(',');
-				var address = $(this).attr('data-address');
-				myMap.destroy();
-				var lon = parseFloat(mapLocation[1]);
-				myMap = new ymaps.Map(mapBlock, {
-						center: [mapLocation[0], lon],
-						zoom: 18
-					}, {
-						searchControlProvider: 'yandex#search'
-					}),
 
-					// Создаём макет содержимого.
-					MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-						'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-					),
+			$('.filials-block').on('click', function () {
+				$('.filials-block').each(function () {
+					$(this).removeClass('active');
+				})
+				$(this).addClass('active');
+				if ($(this).hasClass('active')) {
+					var mapLocation = $(this).attr('data-location').split(',');
+					var address = $(this).attr('data-address');
+					myMap.destroy();
+					var lon = parseFloat(mapLocation[1]);
+					myMap = new ymaps.Map(mapBlock, {
+							center: [mapLocation[0], lon],
+							zoom: 18
+						}, {
+							searchControlProvider: 'yandex#search'
+						}),
 
-					myPlacemark1 = new ymaps.Placemark([mapLocation[0], mapLocation[1]], {
-						hintContent: 'Makro',
-						balloonContent: address,
-					}, {
-						// Опции.
-						// Необходимо указать данный тип макета.
-						iconLayout: 'default#imageWithContent',
-						// Своё изображение иконки метки.
-						iconImageHref: 'img/icons/pin.png',
-						// Размеры метки.
-						iconImageSize: [32, 40],
-						// Смещение левого верхнего угла иконки относительно
-						// её "ножки" (точки привязки).
-						iconImageOffset: [-20, -40],
-						// Смещение слоя с содержимым относительно слоя с картинкой.
-						iconContentOffset: [50, 50],
-						// Макет содержимого.
-						iconContentLayout: MyIconContentLayout
-					});
+						// Создаём макет содержимого.
+						MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+							'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+						),
 
-				myMap.geoObjects
-					.add(myPlacemark1);
-				myMap.behaviors.disable('scrollZoom');
-			}
-		});
-	};
-			}
+						myPlacemark1 = new ymaps.Placemark([mapLocation[0], mapLocation[1]], {
+							hintContent: 'Makro',
+							balloonContent: address,
+						}, {
+							// Опции.
+							// Необходимо указать данный тип макета.
+							iconLayout: 'default#imageWithContent',
+							// Своё изображение иконки метки.
+							iconImageHref: 'img/icons/pin.png',
+							// Размеры метки.
+							iconImageSize: [32, 40],
+							// Смещение левого верхнего угла иконки относительно
+							// её "ножки" (точки привязки).
+							iconImageOffset: [-20, -40],
+							// Смещение слоя с содержимым относительно слоя с картинкой.
+							iconContentOffset: [50, 50],
+							// Макет содержимого.
+							iconContentLayout: MyIconContentLayout
+						});
+
+					myMap.geoObjects
+						.add(myPlacemark1);
+					myMap.behaviors.disable('scrollZoom');
+				}
+			});
+		};
+	}
 
 });
